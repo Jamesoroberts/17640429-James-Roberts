@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Defining the character coding used-->
+  <meta charset="utf-8">
+  
+  <!--Setting the viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+  <!--Page title-->
+  <title>BEN HOWARD OFFICAL/ LIVE</title>
+  
+  <!--CSS link-->
+  <link rel="stylesheet" type="text/css" href="E:\Web Authoring\Assignment 2\BEN HOWARD SITE CACHE\ROOT\CSS/custom.css"
+  
+  <!--JS stylesheet link-->
+  <script src="js/myscript.js"></script>  
+ 
+</head>
+
+<body>
+
+ <div class="image2">
+   <div class="imgtext1">
+     <span class="border">
+	    BEN HOWARD		
+<!--hover animation-->
+      <ul class="nav">
+	    <li><a href="E:\Web Authoring\Assignment 2\BEN HOWARD SITE CACHE\ROOT\index.html">HOME</a></li>
+        <li><a href="E:\Web Authoring\Assignment 2\BEN HOWARD SITE CACHE\ROOT\gallery.html">GALLERY</a></li>
+        <li><a href="E:\Web Authoring\Assignment 2\BEN HOWARD SITE CACHE\ROOT\bio.html">BIOGRAPHY</a></li>
+        <li><a href="E:\Web Authoring\Assignment 2\BEN HOWARD SITE CACHE\ROOT\contact.html">CONTACT US</a></li>
+      </ul>
+		
+<!--Google Maps API however doesnt work for some reason?-->
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      var location = {lat: -25.363,lmg: 131.044};
+	  var map = new google.maps.Map(document.getElementById("map"),{
+	    zoom: 4,
+	    center: location
+	  });
+     }
+
+  </script>
+
+  <script>async defer src="https://maps.googleapis.com/maps/api/
+  js?key=AIzaSyBE-MARVHX3XxwCh2OgTG0rp6qPdJe8o6g&callback=initMap"></script>
+
+
+</body>
+</html>

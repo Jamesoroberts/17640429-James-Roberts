@@ -1,0 +1,450 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+	font-size: 10px;
+	font-family: sans-serif;
+	font-weight: 400;
+	line-height: 0.5em;	
+	background-image: url("E:/Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/section.jpg");
+}
+
+
+/*Contact us*/
+.contact-form{
+	width: 85%;
+	max-width: 600px;
+	background: #fff;
+	position: absolute;
+	top: 90%;
+	left: 28%;	
+	transform: tramslate(-50%, -50%);
+	padding: 2rem 2rem;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #00000063;
+	font-family: sans-serif;	
+}
+
+.contact-form h1{
+	margin-top: 0;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: #000;
+	font-size: 2rem;
+}
+
+.txtb{
+	border:1px solid gray;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius: 8px;
+	letter-spacing: 1px;
+}
+
+.txtb label{
+	display: block;
+	text-align: left;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px
+}
+
+.txtb input,.txtb textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;	
+}
+
+.contactbtn{
+	display: inline-block;
+	background: #9b59b6;
+	padding: 14px 0;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+}
+
+
+/*Biography*/
+.dropdown{
+	 position: relative;
+     display: inline-block;
+	 margin-right: 50px;
+}
+
+.dropbtn{
+  background-color: transparent;
+  color: white;
+  padding: 0.8rem;
+  font-size: 2.3rem;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.3rem;  
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  line-height: 3rem;
+  word-spacing: 0.2rem;
+  min-width: 1rem;
+  margin-right: 6px; 	
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn{
+  background-color: transparent;
+}
+
+.BIO-textbox{
+	
+  background-color: transparent;
+  width: 80%;
+  padding: 25px;
+  margin-left: 8%;
+  word-spacing: 1rem;
+  line-height: 30px;
+  font-size: 1.5rem;
+  color: #fff;	
+}
+
+
+/*gallery nav menu*/
+.galmenu{
+	height: 100px;
+	background: #34495e;
+	padding: 0 20px;
+	color: #fff;
+}
+
+.gallerylogo{
+	line-height: 100px;
+	float: left;
+	text-transform: uppercase;
+}
+
+.galmenu{
+	float: right;
+	line-height: 100px;
+}
+
+.galmenu a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.show-menu-gal,.hide-menu-gal{
+	transition: 0.4s;	
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.show-menu-gal{
+	float: right;
+}
+
+.show-menu-gal i{
+	line-height: 100px;
+}
+.galmenu a:hover,
+.show-menu-gal:hover,
+.hide-menu-gal:hover{
+	color: #3498db;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+
+/*social media icons*/
+.middle{
+	position: absolute;
+	margin-top: 40%;
+	padding: 0;
+	
+	transform: tramslateY(-50);
+	width: 100%;
+	text-align: center;	
+}
+
+/*icon boxes*/
+.socialmedia{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: #f1f1f1;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #39c9bb;
+	overflow: hidden;
+	position: relative;
+}
+
+.socialmedia i{
+	line-height: 90px;
+	font-size: 26px;
+	transition: 0.2s linear;	
+}
+
+.socialmedia:hover i{
+	transform: scale(1.8);
+	color: #f1f1f1;
+}
+
+/*animation after hovering*/
+.socialmedia::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #39c9bb;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+    text-align:center; 	
+}
+
+.socialmedia:hover::before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+@keyframes aaa {
+	0%{
+		left: -110%;
+		top: 90%;
+	}50%{
+		left: 10%;
+		top: -30%;
+	}100%{
+		top: -10%;
+		left: -10%;
+	}	
+}
+
+
+/*top arrow*/
+.gotop{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 3rem;
+	right: 2rem;	
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 22px;
+}
+
+
+/*gallery*/
+/*gallery animation*/
+.gallery{
+	margin: 10px 50px;
+	padding-left: 3em;
+}
+
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+
+.gallery img:hover{
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+
+
+/*Navigation hover animation*/
+.nav {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;	
+}
+
+.nav * {
+	box-sizing: inline-block;
+	transition: all 0.35s ease;
+}
+
+.nav li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: .5em 1em;
+	padding: 0;
+}
+
+.nav a {
+	padding: .3em 0.8em;
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;	
+}
+
+.nav a:before,
+.nav a:after {
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	content: '';
+	transition: all 0.35s ease;
+	opacity: 0;
+}
+
+.nav a:before {
+	right: 0;
+	top: 0;
+	border-right: 3px solid white;
+	border-top: 3px solid white;
+	transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+	left: 0;
+	bottom: 0;
+	border-left: 3px solid white;
+	border-bottom: 3px solid white;
+	transform: translate(100%, -50%);	
+}
+
+a:hover:before,
+a:hover:after {
+	transform: tramslate(0%, 0%);
+	opacity: 1;
+}
+
+
+/*LIVE*/
+#map{
+	height: 100%;
+	width: 80%;
+}
+
+
+/*Home*/
+/*Homepage page structure*/
+.image2{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width:100%;
+}
+	
+.image1{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	/*fixed = parralax, scroll = normal*/
+	background-attachment: fixed;	
+}
+
+.image1{
+	background-image:url('E:Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/home.jpg');
+	min-height: 100%;
+}
+
+.image2{
+	background-image:url("E:/Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/section.jpg");
+	min-height: 100%;
+}
+
+/*albums*/
+.albumcontainer{
+	width: 80%;
+	padding: 1rem;
+	background: #1c645d;
+	margin: 0.5rem auto;
+	margin-top: 0.5rem auto;
+	display: flex;
+	justify-content: center;	
+}
+
+section{
+	background-color: #113c38;
+}
+
+/*album box design*/
+.album1{
+	width: 30rem;
+	height: 30rem;
+	background: url("E:/Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/Album1.jpg");
+	margin: 0 10px;	
+}
+
+.album2{
+	width: 30rem;
+	height: 30rem;
+	background: url("E:/Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/Album2.jpg");
+	margin: 0 10px;	
+}
+
+.album3{
+	width: 30rem;
+	height: 30rem;
+	background: url("E:/Web Authoring/Assignment 2/BEN HOWARD SITE CACHE/ROOT/Assets/Album3.jpg");
+	margin: 0 10px;	
+}
+
+/*homepage parralax*/
+.imgtext1{
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+/*colour of ben howard title*/
+.border{
+	color: #fff;
+}
+
+.border.trans{
+	background-color: transparent;
+}
+	
+/*disables parralax affect for mobile*/	
+
+@media(max-width:568px){
+	.image1, .image2{
+		background-attachment: scroll;
+	}
+}
